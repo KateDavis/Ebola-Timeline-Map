@@ -313,7 +313,7 @@ function generateMap(){
 function transitionMap(){
     
     
-    $('#week').html("<h4>A map of suspected and confirmed cases in the previous 3 weeks up to the week ending " + mapSettings[currentWeek].Date + "</h4>");
+    $('#week').html("<h4>A map of cases for the last 3 weeks up to the week ending " + mapSettings[currentWeek].Date + "</h4>");
     
     var projection = d3.geo.mercator()
         .center([mapSettings[currentWeek].lng,mapSettings[currentWeek].lat])
